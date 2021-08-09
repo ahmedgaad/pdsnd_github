@@ -6,32 +6,6 @@ CITY_DATA = {'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv'}
 
-def check_input(input_str,input_type):
-    """
-    check the validity of user input.
-    input_str: is the input of the user
-    input_type: is the type of input: 1 = city, 2 = month, 3 = day
-    """
-    while True:
-        input_read=input(input_str)
-        try:
-            if input_read in ['chicago','new york city','washington'] and input_type == 1:
-                break
-            elif input_read in ['january', 'february', 'march', 'april', 'may', 'june','all'] and input_type == 2:
-                break
-            elif input_read in ['sunday','monday','tuesday','wednesday','thursday','friday','saturday','all'] and input_type == 3:
-                break
-            else:
-                if input_type == 1:
-                    print("Sorry, your input should be: chicago new york city or washington")
-                if input_type == 2:
-                    print("Sorry, your input should be: january, february, march, april, may, june or all")
-                if input_type == 3:
-                    print("Sorry, your input should be: sunday, ... friday, saturday or all")
-        except ValueError:
-            print("Sorry, your input is wrong")
-    return input_read
-
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -42,11 +16,29 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = check_input("Would you like to see the data for chicago, new york city or washington?",1)
+    while True:
+        city = input("Which city would you like to explore ?")
+        city = city.lower()
+        if city in ['chicago', 'new york city', 'washington']:
+            break
+        else:
+            print("invalid input. Please enter a valid input")
     # get user input for month (all, january, february, ... , june)
-    month = check_input("Which Month (all, january, ... june)?", 2)
+    while True:    
+        month = input("Do you want details specific to a particular month? If yes, type month name from within first six months else type 'all'")
+        month = month.lower()
+        if month in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
+            break
+        else:
+            print("invalid input. Please enter a valid input")
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = check_input("Which day? (all, monday, tuesday, ... sunday)", 3)
+    while True:
+        day = input("Do you want details specific to a particular day? If yes, type day name else type 'all'")
+        day = day.lower()
+        if day in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
+            break
+        else:
+            print("invalid input. Please enter a valid input")
     print('-'*40)
     return city, month, day
 

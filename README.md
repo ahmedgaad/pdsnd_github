@@ -38,5 +38,24 @@ Wed Jul 28th, 2021
 * [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 * [VS Code Documentation](https://code.visualstudio.com/docs)
 
+### **Statistics Computed:**
+The code helps user to tell about bike share use in _Chicago_, _New York City_ and _Washington_ by computing a variety of descriptive statistics. In this project, the code output will provide the following information:
 
+* Popular times of travel (i.e., occurs most often in the start time):
+  - most common month
+  - most common day of week
+  - most common hour of day
 
+* Popular stations and trip:
+  - most common start station
+  - most common end station
+  - most common trip from start to end (i.e., most frequent combination of start station and end station)
+
+* Trip duration:
+  - total travel time
+  - average travel time
+  
+* User info:
+  - counts of each user type
+  - counts of each gender (only available for _NYC_ and _Chicago_)
+  - earliest, most recent, most common year of birth (only available for _NYC_ and _Chicago_)

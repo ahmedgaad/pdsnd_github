@@ -33,6 +33,10 @@ Wed Jul 28th, 2021
 * A text editor, like _VS Code_ or _Atom_.
 * A terminal application (_Terminal_ on _Mac_ and _Linux_ or _Cygwin_ on _Windows_).
 
+## **Links for software tutorials:**
+* [Git - Reference](https://git-scm.com/docs)
+* [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+* [VS Code Documentation](https://code.visualstudio.com/docs)
 
 
 

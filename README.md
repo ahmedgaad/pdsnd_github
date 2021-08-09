@@ -1,5 +1,3 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
 Wed Jul 28th, 2021
 
@@ -29,3 +27,12 @@ Wed Jul 28th, 2021
 
 * The link for commit message style reference for this project is given below :
     - [Udacity Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/)
+
+## **Softwares needed:**
+* _Python 3, NumPy,_ and _Pandas_ installed using _Anaconda_
+* A text editor, like _VS Code_ or _Atom_.
+* A terminal application (_Terminal_ on _Mac_ and _Linux_ or _Cygwin_ on _Windows_).
+
+
+
+
